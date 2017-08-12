@@ -1,0 +1,23 @@
+1.安装
+==========================================================
+install or upgrade an existing system //安装或升级操作系统  
+install system with basic video driver //使用简单显卡驱动安装系统  
+Rescue installed system //救援模式  
+Boot from local drive //从硬盘启动  
+Memory test //内存测试
+
+Basic Storage Devices //默认  
+Specialized Storage Devices //特定，如远程SAN设备
+
+Use All Space //删除设备上现有的所有分区，重新创建Linux分区  
+Replace Existing Linux System(s) //仅删除现有Linux分区，并重新创建新的Linux分区  
+Shrink Current System //压缩现有分区，创建新的Linux分区  
+Use Free Space //使用所有剩余的空间，创建新的Linux分区  
+Create Custom Layout //自定义分区
+
+默认最小化安装，其他有桌面、最小化桌面、最小化安装、基础服务器、数据库服务器、网站服务器、虚拟主机、软件开发。
+
+2.命令
+===========================================================
+pwd  
+cd  
