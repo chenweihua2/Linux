@@ -50,4 +50,24 @@ yum whatprovides filename //该文件属于哪个软件包
   createrepo -g /tmp/*.comps.xml yum_local //分组
   vim local.repo  baseurl=file:///yum_local/ gpgcheck=0
   yum clean all
-  
+
+日志：
+===========================================================
+/var/log /etc/rsyslog.conf
+rsyslog是syslog的增强版本
+service rsyslog start | stop | restart
+
+域名：
+===========================================================
+主机名.域名.类型
+BIND
+yum install bind bind-chroot bind-utlis
+BIND配置文件：
+      /etc/named.conf   //主配置文件
+      /var/named        //zone文件
+安装了bind-chroot，BIND会被封装到一个伪根目录内，配置文件的位置变为：
+      /var/named/chroot/etc/named.conf
+      /var/named/chroot/var/named/
+chroot是通过将相关文件封装在一个伪根目录内，已达到安全防护的目的，一旦该程序被攻破，将只能访问伪根目录内的内容，而不是真是的根目录
+cp -rv /usr/share/doc/bind-9.8.2/sample/etc/* /var/named/chroot/etc/
+cp -rv /usr/share/doc/bind-9.8.2/sample/var/* /var/named/chroot/var/
