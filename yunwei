@@ -21,3 +21,33 @@ Create Custom Layout //自定义分区
 ===========================================================
 pwd  
 cd  
+===========================================================
+bilibili:7818
+/boot:stage1 512字节(MBR) 默认可以支持十种格式的文件系统启动
+      stage2
+      RHEL5/initrd < RHEL/initamfs 效率 man initrd
+dmesg /var/log/dmesg
+init /etc/inittab /etc/init /etc/rc.d/rc.sysinit /etc/rc.d/rc[0-6].d
+runlevel
+grub.conf:加在首行password --md5 加密密码(grub-md5-crypt)
+加强安全机制：把根分区加密
+
+rpm -qa/f/i/l/ip/lp p查询未安装的
+rpm --import RPM-GPG-KEY-CentOS-6
+rpm -K *.rpm  //验证
+rpm -V softwarename //已安装，校验出是否被修改
+
+Yellowdog Updater,Modified，自动解决RMP的依赖关系问题。
+yum search keyword
+yum list (all | installed | recent | updates)
+yum info packagename
+yum whatprovides filename //该文件属于哪个软件包
+自己搭建yum仓库：
+  mkdir yum_local
+  cp -rv **/Package/* yum_local
+  rpm -ivh createrepo***.rpm
+  createrepo -v yum_local //索引
+  createrepo -g /tmp/*.comps.xml yum_local //分组
+  vim local.repo  baseurl=file:///yum_local/ gpgcheck=0
+  yum clean all
+  
