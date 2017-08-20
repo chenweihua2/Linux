@@ -71,3 +71,11 @@ BIND配置文件：
 chroot是通过将相关文件封装在一个伪根目录内，已达到安全防护的目的，一旦该程序被攻破，将只能访问伪根目录内的内容，而不是真是的根目录
 cp -rv /usr/share/doc/bind-9.8.2/sample/etc/* /var/named/chroot/etc/
 cp -rv /usr/share/doc/bind-9.8.2/sample/var/* /var/named/chroot/var/
+
+### ftp
+/etc/vsftpd/vsftpd.conf       //vsftpd主配置文件  
+/etc/vsftpd/ftpusers          //黑名单  
+/etc/vsftpd/user_list         //控制名单（由配置文件控制是白名单还是黑名单）  
+/var/ftp                      //ftp共享目录  
+/var/ftp/xferlog
+
