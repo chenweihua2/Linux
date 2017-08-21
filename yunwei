@@ -120,5 +120,25 @@ A+< //head
 A+> //end  
 C+r //search
 
+### ACL
+owner,group,other read,write,excute  
+      /etc/passwd user account  
+      /etc/group group info  
+      /etc/shadow password  
+chmod change mode  
+      Octal(0-7) Binary(000-111) File Mode  
+umask  
+origin file mode  --- rw- rw- rw-  
+mask1             000 000 000 010  
+permission        --- rw- rw- r--  
+mask2             000 000 000 000  
+permission        --- rw- rw- rw-  
+mask3             000 000 110 110  
+permission        --- rw- --- ---  
+specify permission  
+setuid s      //x=root   
+setgid s      //  
+sticky t  
+
 
 
