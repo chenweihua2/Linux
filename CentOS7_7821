@@ -1,0 +1,11 @@
+### 1.install sth.
+yum install gcc gcc-c++  
+install p7zip(make & make install)  
+7za e ishagua.7z   解压到当前目录下,不保留原来的目录结构  
+7za x ishagua.7z   解压到当前目录下,但保留原来的目录结构
+
+### 2.config
+setterm -blank 60 //Centos7 关掉屏幕保护  
+
+### 3.begin to study
+Computer English
