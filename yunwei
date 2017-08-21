@@ -79,3 +79,46 @@ cp -rv /usr/share/doc/bind-9.8.2/sample/var/* /var/named/chroot/var/
 /var/ftp                      //ftp共享目录  
 /var/ftp/xferlog
 
+### Quick keyboard
+#### move cursor
+C Ctrl  
+A Alt  
+
+C+a //head  
+C+e //tail  
+C+f //forward a letter  
+C+b //back a letter  
+C+l
+
+A+f //forward a word   
+A+b //back a word  
+
+#### modift text
+C+d //del  
+C+t //change letter  
+
+A+t //change word  
+A+l //lower  
+A+u //uper  
+
+copy & paste text  
+C+k //cut back of the cursor  
+C+u //cut front of the cursor  
+
+A+d //cut back of the cursor  
+A+Backspace //cut front of the cursor  
+C+y //paste
+
+#### auto complete
+
+#### history
+history | grep keyword  
+
+C+p //preview  
+C+n //next  
+A+< //head
+A+> //end  
+C+r //search
+
+
+
