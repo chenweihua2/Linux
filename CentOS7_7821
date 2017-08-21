@@ -1,3 +1,9 @@
+### centos7+win10安装完成之后，使用gurb2引导win10系统  
+wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo  
+yum update;  
+yum install ntfs-3g  
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
 ### 1.install sth.
 yum install gcc gcc-c++  
 install p7zip(make & make install)  
@@ -9,3 +15,4 @@ setterm -blank 60 //Centos7 关掉屏幕保护
 
 ### 3.begin to study
 Computer English
+
